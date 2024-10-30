@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Navbar from '../Components/Navbar';
-import Sidebar from '../Components/Sidebar';
+import Navbar from '../../Components/Navbar';
+import Sidebar from '../../Components/Sidebar';
 import PowerCalculatorForm from '@/Components/PowerCalculatorForm';
 
 export default function Example() {
@@ -18,7 +18,6 @@ export default function Example() {
     <div className="bg-[#ffffff] min-h-screen flex flex-col items-center justify-center p-8">
         <Navbar toggleSidebar={toggleSidebar} />
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-        <PowerCalculatorForm />
     </div>
   );
 }
